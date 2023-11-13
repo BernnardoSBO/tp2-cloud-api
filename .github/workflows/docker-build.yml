@@ -21,7 +21,7 @@ jobs:
     
     - name: Build and Push the Docker image
       run: |
-        docker build . --file Dockerfile --tag bernnardosbo/nginx-backend:ga-${{ github.run_number }}
+        docker build . --file Dockerfile --tag bernnardosbo/backend:ga-${{ github.run_number }}
         docker push bernnardosbo/backend:ga-${{ github.run_number }}
         
   updateYaml:
